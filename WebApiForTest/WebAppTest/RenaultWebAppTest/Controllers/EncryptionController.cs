@@ -11,7 +11,7 @@ namespace RenaultWebAppTest.Controllers
 {
     public class EncryptionController : ApiController
     {
-
+        //This Method will do a symetric decryption
         [HttpPost]
         [Route("api/Encryption/Symdecrypt")]
         public async System.Threading.Tasks.Task<IHttpActionResult> Symdecrypt(DecryptInput input)
@@ -25,6 +25,7 @@ namespace RenaultWebAppTest.Controllers
             return Json(new DecryptInput() { Value = decryptedValue });
         }
 
+        //This Method will do a symetric encryption
         [HttpPost]
         [Route("api/Encryption/Symencrypt")]
         public async System.Threading.Tasks.Task<IHttpActionResult> Symencrypt(DecryptInput input)
@@ -38,6 +39,7 @@ namespace RenaultWebAppTest.Controllers
             return Json(new DecryptInput() { Value = decryptedValue });
         }
 
+        //This Method will do an asymetric decryption
         [HttpPost]
         [Route("api/Encryption/Asymdecrypt")]
         public async System.Threading.Tasks.Task<IHttpActionResult> Asymdecrypt(DecryptInput input)
@@ -47,6 +49,8 @@ namespace RenaultWebAppTest.Controllers
 
             return Json(new DecryptInput() { Value = decryptedValue });
         }
+
+        //This Method will do an asymetric encryption
         [HttpPost]
         [Route("api/Encryption/Asymencrypt")]
         public async System.Threading.Tasks.Task<IHttpActionResult> Asymencrypt(DecryptInput input)
