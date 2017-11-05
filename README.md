@@ -8,7 +8,7 @@ How to use Azure Key Vault in and ASP.NET Project
 ![2](https://user-images.githubusercontent.com/2820473/32329862-90c4e4ac-bfde-11e7-99a6-a79c811e06e6.png)
 
 
--	Creating a  self-signed certificate with powershell , I had to do it with  wild card sur PowerShell : *cloudapp.net , with public and private key RSA 2048.
+-	Creating a  self-signed certificate with powershell (this one was created with a wild card *cloudapp.net) , with public and private key RSA 2048.
 
 
 
